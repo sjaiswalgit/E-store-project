@@ -1,12 +1,12 @@
 import './App.css';
 import Header from './Components/Header/header';
-import Login from './Components/Login/login';
+import Auth from './Pages/Auth/auth';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Login/>
+      <Auth/>
       <h1>Welcome to the E-store</h1>
     </div>
   );}

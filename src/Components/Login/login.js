@@ -1,21 +1,36 @@
-import React from 'react'
-function Login() {
-    return (
+import React from "react";
+import styles from "./login.module.css";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../../config/firebase"
 
+function Login(props) {
+  const signIn = async (e) => {
+    e.preventDefault();
+    try {
+      await signInWithEmailAndPassword(
+        auth,
+        e.target[0].value,
+        e.target[1].value
+      );
+      // alert("sign in successful")
+    } catch (err) {
+      alert(err);
+    }
+  };
 
-        <div className="form-wrapper">
-
-            <span className="title">Login</span>
-            <form action="" className='register_form'>
-                <input className='text-input' type="email" placeholder='Email' />
-                <input className='text-input' type="passsword" placeholder='Password' />
-                <button className='button'>Sign In</button>
+    return (   
+        <div className={styles.form_box}>  
+        <div className={styles.form_wrapper}>           
+            <span className={styles.title}>Login</span>
+            <form onSubmit={signIn} className={styles.register_form}>
+                <input className={styles.text_input} type="email" placeholder='Email' required/>
+                <input className={styles.text_input} type="password" placeholder='Password' required />
+                <button className={styles.button}>Sign In</button>
             </form>
-            <span className='switch-text'>Not a member? <span className='login-link'>Click Here to register</span></span>
+            <span className={styles.switch_text}>Not a member? <span className='login-link' style={{cursor:"pointer",fontWeight:"bold"}} onClick={()=>props.setIsMember(false)}>Click Here to register</span></span>
         </div>
-
-
+        </div>         
     )
 }
 
-export default Login
+export default Login;
