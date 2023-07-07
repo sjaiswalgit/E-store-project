@@ -1,0 +1,105 @@
+.filter_box{
+   
+    float:left;
+    width: 225px;
+    border:1px solid rgb(192, 192, 192);
+    margin-right: 5px;
+    background-color: rgb(252, 250, 250);
+    padding-left: 5px;
+    padding-right: 7px;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.price_filter{
+  margin-top: 15px;
+}
+.filter_box h3{line-height:50px;
+border-bottom: 1px solid grey;}
+
+.range{
+    -webkit-appearance: none;
+  width: 90%;
+  height: 5px;
+  background: orange;
+  border-radius: 4px;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  
+}
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+   border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: orangered;
+    cursor: pointer;
+   
+  }
+
+
+  .category_list{
+    margin-top: 4px;
+    text-transform: uppercase;
+    font-size: small;
+    display: none;
+    flex-direction: column;
+    gap:2px;
+    background-color: rgb(221, 218, 218);
+    
+    
+  }
+  .category_name{padding-left: 4px;}
+  .category_list .category_name:hover{
+    background-color: grey;
+    cursor: pointer;
+  }
+  .category_filter{
+    background-color: rgb(243, 242, 242);
+    border: 1px solid grey;
+    clear:both;
+    margin-top: 25px;
+  }
+  .category_filter:hover .category_list{
+    display: flex;
+  }
+  .category_filter h4{ word-spacing: 5em;
+  padding-left: 4px;}
+
+  .filter-display{
+    margin: 10px 0 10px 0;
+  }
+.sorting-display{
+  margin:10px 0 10px 0;
+}
+.fliter_point{
+  display:none;
+}
+
+  @media only screen and (max-width: 600px){
+    .filter-box{float:none;
+      width:100%;
+      display: flex;
+      flex-direction: row;
+    }
+    .filter_box h3{font-size: medium;}
+    .filter_display,.sorting_display{position: relative; cursor: pointer;}
+    .filter_display .filter{display:none; 
+      position: absolute; 
+      background-color:
+       antiquewhite;
+       z-index: 100;
+      width: 300%;}
+
+    .filter_display .fliter_point{display: block; background:wheat;padding: 4px;}
+    .sorting_display .sorting_point{background:wheat;padding: 4px;}
+  .sorting_display form{display:none;}
+  .filter_display:hover .filter{display:block;}
+  .sorting_display:hover form{display: block; 
+    position: absolute;
+    background-color:antiquewhite;
+    z-index: 100;
+   width: 200%;}
+  }

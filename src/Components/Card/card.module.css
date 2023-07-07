@@ -1,10 +1,4 @@
-#card-container{
-    background-color: #fafaf7;
-    width:auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-.card-box{ background-color:white;
+.card_box{ background-color:white;
     height:300px;
 width:200px;
 border:1px solid grey;
@@ -16,7 +10,7 @@ border-radius: 10px;
 position: relative;
 z-index: 1;
 }
-.card-box img{padding: 5px;
+.card_box img{padding: 5px;
     height: 50%;
     width: 90%;
     margin-left: auto;
@@ -50,13 +44,13 @@ z-index: 1;
     font-size: large;
     
 }
-.card-box:hover
+.card_box:hover
 {cursor: pointer;
 scale: 1.1;
 z-index: 1;
 }
 @media only screen and (max-width: 600px)
-{#card-container{
+{.card_container{
     justify-content: center;
 }
 
