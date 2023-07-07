@@ -52,7 +52,7 @@ border-bottom: 1px solid grey;}
     
   }
   .category_name{padding-left: 4px;}
-  .category_list .category_name:hover{
+  .category_name:hover{
     background-color: grey;
     cursor: pointer;
   }
@@ -79,14 +79,15 @@ border-bottom: 1px solid grey;}
 }
 
   @media only screen and (max-width: 600px){
-    .filter-box{float:none;
+    .filter_box{float:none;
       width:100%;
       display: flex;
       flex-direction: row;
+      align-items: center;
     }
     .filter_box h3{font-size: medium;}
     .filter_display,.sorting_display{position: relative; cursor: pointer;}
-    .filter_display .filter{display:none; 
+    .filter{display:none; 
       position: absolute; 
       background-color:
        antiquewhite;

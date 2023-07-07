@@ -11,12 +11,19 @@ const Api = ({children}) => {
     }
     catch(error)
     {console.log(error)}}
+
+
+
+    
   useEffect(()=>{fetching()},[]);
   
 
   return (<Usercontext.Provider value={data}>
     {children}
   </Usercontext.Provider>)
+}
+const Err=()=>{
+
 }
 
 const Getdata=()=>

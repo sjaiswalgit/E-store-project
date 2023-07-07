@@ -1,0 +1,57 @@
+.Contact_body{
+    width: 100%;
+    min-height:100vh ;
+    background: -webkit-linear-gradient(to right,
+    #615ac2,
+    #2a818d);
+background: linear-gradient(to right,
+#615ac2, #2a818d);
+color: white;
+display: flex;
+flex-direction: column;
+padding-top: 60px;
+align-items: center;
+gap:20px;
+}
+
+.Contact_body .Contact_form{
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 30px 20px 20px 20px;
+    max-width:600px;
+    align-items: center;
+}
+.Contact_form .Contact_input1{
+    width:35vmax;
+   height: 1.7em;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.Contact_form .Contact_input2{
+    width: 30vmax;
+    height: 20vmax;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    resize: initial;
+    padding: 10px;
+}
+.Contact_form button{
+width: 8em;
+border-radius: 8px;
+height: 1.6rem;
+cursor: pointer;
+}
+.Contact_form input::placeholder{
+    color: black;
+    text-align: start;
+}
+.Contact_form textarea::placeholder{
+    color: black;
+    text-align: start;
+}

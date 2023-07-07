@@ -119,7 +119,8 @@ li .active{
     position: relative;
 }
 .account_box{
-    display:none;
+    display: none;
+    text-align: center;
     position:absolute;
     right:10px;
     top:20px;

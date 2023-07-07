@@ -41,7 +41,7 @@ const searchHandler=()=>
                 <li ><NavLink to="auth" className={({ isActive }) => (isActive ? styles.active : styles.link)} >SignIn/SignUp</NavLink></li>:
                 <>
                 <li ><NavLink to="auth" className={({ isActive }) => (isActive ? styles.active :styles.link)} ><ShoppingCartIcon /></NavLink></li>
-                <li className='account-icon'> <AccountCircleIcon /><div className={styles.account_box}><AccountCircleIcon /><br/>You are signed in as<br/>
+                <li className={styles.account_icon}> <AccountCircleIcon /><div className={styles.account_box}><AccountCircleIcon /><br/>You are signed in as<br/>
                 {auth.currentUser.displayName}<br/> <br/><button onClick={()=>{logOut()}}>Sign out</button>
                 </div></li>
                 </>
