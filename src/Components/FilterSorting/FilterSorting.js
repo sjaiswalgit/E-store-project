@@ -29,10 +29,10 @@ useEffect(()=>
     </div><div className={styles.sorting_display}>
 
         <div className={styles.sorting_point}>Sort By &#8897;</div>
-        <form style={{textAlign:'left'}} onChange={(e)=>props.sorting(e)}>
-        <input type='radio' className={styles.price_tag} name='sort'/>
+        <form style={{textAlign:'left'}} onChange={(e)=>{props.sorting(e)} }>
+        <input type='radio' className={styles.price_tag} name='sort' id="price-tag"/>
         <label for='price-tag'>Sort By Price</label><br/>
-        <input type='radio' className={styles.rating_tag} name='sort'/>
+        <input type='radio' className={styles.rating_tag} name='sort' id="rating-tag"/>
         <label for='rating-tag'>Sort By Rating</label>
         </form>
     </div>

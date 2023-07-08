@@ -11,7 +11,7 @@ background: linear-gradient(to right,
 
 }
 @media only screen and (max-width: 600px){
-    .Cart-container{flex-direction: column;}
+    .Cart_container{flex-direction: column;}
    
 }
 

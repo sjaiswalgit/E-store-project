@@ -32,9 +32,8 @@ function catFilter(e){
  const t= data.filter((a)=>{return(a.category===e)});
  setCatproduct(t);
  setFilterData(t);
- console.log("localfun")
 }
-console.log("mainfun")
+//Sorting product function 
 function  sorting(e){
   var unsort=[...filterData]
   if(e.target.id==="price-tag")
@@ -52,7 +51,7 @@ function  sorting(e){
   <FilternSorting filterRange={filterRange} maxData={maxData} sorting={sorting} displayData={props.displayData} catFilter={catFilter}/>
     <div className={styles.card_container}>
       {filterData.map((itemdetail)=>{return (
-      <Card itemdetail={itemdetail} setItem={props.setItem}/>)})}
+      <Card itemdetail={itemdetail} setItem={props.setItem} />)})}
 </div>
 </>
   )
