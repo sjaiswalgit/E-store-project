@@ -50,8 +50,8 @@ const reset=()=>{setDisplaydata(datalist);}
 
 return (
     <div className="App">  
-    <BrowserRouter>
-      <Routes>   
+    <BrowserRouter basename="/E-store-project">
+      <Routes >   
       <Route path="/" element={<Header searchProduct={searchProduct} loginState={loginState} reset={reset}/>}>
       <Route index element={<Home datalist={datalist} catdisplay={catdisplay} />}/>
       <Route path="about" element={<About/>}/>

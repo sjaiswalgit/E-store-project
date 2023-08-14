@@ -42,7 +42,7 @@ function Home(props) {
     <div className={styles.catogories_box} ref={scroller}>
     {catogories.map((e)=>{ return(
       <div className={styles.catogories_item} onClick={()=>{props.catdisplay(e[0]);navigate("/products");}} 
-       style={{backgroundImage:`url("${e[0]+".jpeg"}")`}} >{e[0]}</div>)})}
+       style={{backgroundImage:`url("${process.env.PUBLIC_URL +'/'+ e[0]+'.jpeg'}")`}} >{e[0]}</div>)})}
       
     </div>
     <div className={styles.item_mover} onClick={()=>{scroller.current.scrollLeft+=150;}}>&#8811;</div>

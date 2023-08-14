@@ -41,12 +41,7 @@ gap:20px;
     resize: initial;
     padding: 10px;
 }
-.Contact_form button{
-width: 8em;
-border-radius: 8px;
-height: 1.6rem;
-cursor: pointer;
-}
+
 .Contact_form input::placeholder{
     color: black;
     text-align: start;
@@ -54,4 +49,19 @@ cursor: pointer;
 .Contact_form textarea::placeholder{
     color: black;
     text-align: start;
+}
+.submitted{
+    width: 100%;
+    min-height:50vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:10px
+}
+.send{
+    width: 8em;
+border-radius: 8px;
+height: 1.6rem;
+cursor: pointer;
 }
