@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/E-store-project/static/css/main.009bb9ff.css",
+    "main.js": "/E-store-project/static/js/main.0c6239fc.js",
+    "static/js/787.c1112931.chunk.js": "/E-store-project/static/js/787.c1112931.chunk.js",
+    "static/media/about_image.jpeg": "/E-store-project/static/media/about_image.ecc6a5ee1a698d97259e.jpeg",
+    "static/media/corosel.jpeg": "/E-store-project/static/media/corosel.bfc7c25e25b0bc6aa735.jpeg",
+    "index.html": "/E-store-project/index.html",
+    "main.009bb9ff.css.map": "/E-store-project/static/css/main.009bb9ff.css.map",
+    "main.0c6239fc.js.map": "/E-store-project/static/js/main.0c6239fc.js.map",
+    "787.c1112931.chunk.js.map": "/E-store-project/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.009bb9ff.css",
+    "static/js/main.0c6239fc.js"
+  ]
+}
